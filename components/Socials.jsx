@@ -13,8 +13,8 @@ const Socials = ({ containerStyles, iconStyles }) => {
 		<div className={containerStyles}>
 			{socials.map((item, index) => {
 				return (
-					<Link href={item.path} className={iconStyles}>
-						{item.icon}
+					<Link key={index} href={item.path} className={iconStyles}>
+						{item.Icon}
 					</Link>
 				);
 			})}
