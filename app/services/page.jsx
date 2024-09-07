@@ -6,26 +6,30 @@ import { delay, motion } from "framer-motion";
 const services = [
 	{
 		num: "01",
-		title: "Web Development",
-		description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+		title: "Front-End Web Development",
+		description:
+			"Specializing in modern front-end frameworks like React and TypeScript to build responsive, dynamic, and user-friendly web interfaces.",
 		href: "",
 	},
 	{
-		num: "01",
-		title: "Web Development",
-		description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+		num: "02",
+		title: "Back-End Web Development",
+		description:
+			"Building robust and scalable back-end solutions using Node.js, Express, MongoDB, and Prisma for seamless data management and server-side operations.",
 		href: "",
 	},
 	{
-		num: "01",
-		title: "Web Development",
-		description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+		num: "03",
+		title: "Mobile Development with Flutter",
+		description:
+			"Creating high-performance cross-platform mobile applications with Flutter, delivering a smooth and native user experience.",
 		href: "",
 	},
 	{
-		num: "01",
-		title: "Web Development",
-		description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+		num: "04",
+		title: "AI and Machine Learning Development",
+		description:
+			"Developing intelligent systems using Python and machine learning frameworks to solve complex problems and enable data-driven decision-making.",
 		href: "",
 	},
 ];

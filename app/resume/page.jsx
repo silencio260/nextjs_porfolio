@@ -23,7 +23,8 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
 	title: "About me",
 	description:
-		"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi distinctio alias temporibus culpa animi, ullam delectus repellat debitis incidunt. Temporibus!",
+		"I am a dedicated software engineer with a passion for solving complex problems through innovative technology. With 3+ years of experience in full-stack development and a focus on AI and Machine Learning, I continuously strive to push the boundaries of what's possible.",
+
 	info: [
 		{
 			fieldName: "Name",
@@ -56,26 +57,52 @@ const about = {
 	],
 };
 
-const experince = {
+const experience = {
 	icon: "/assets/resume/badge.svg",
-	title: "My experience",
+	title: "My Experience",
 	description:
-		"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi distinctio alias temporibus culpa animi, ullam.",
+		"I have gained valuable experience working on various software development projects, from full-stack web applications to advanced machine learning systems. My roles have spanned across startups, internships, and freelance projects, showcasing a diverse set of skills in tech.",
 	items: [
 		{
-			comapny: "Tech Solutions Inc.",
-			position: "Full Stack Developer",
-			duration: "2022 - Present",
+			company: "NITDA",
+			position: "Software Engineer Intern",
+			duration: "Dec 2023 - Present",
+			points: [
+				"Contributed to developing a machine learning-based attendance system using Python, TensorFlow, and OpenCV.",
+				"Collaborated in designing, implementing, and testing machine learning models.",
+				"Participated in code reviews, providing valuable feedback to peers.",
+			],
 		},
 		{
-			comapny: "Tech Solutions Inc.",
+			company: "Malead Technologies",
 			position: "Full Stack Developer",
-			duration: "2022 - Present",
+			duration: "Sep 2023 - Jan 2024",
+			points: [
+				"Developed a scalable dashboard for managing complex trading transactions using Svelte.js and Node.js.",
+				"Implemented a back-end with Postgres, Prisma, and TypeScript.",
+				"Actively engaged in code reviews and contributed to project improvements.",
+			],
 		},
 		{
-			comapny: "Tech Solutions Inc.",
-			position: "Full Stack Developer",
-			duration: "2022 - Present",
+			company: "Freelance",
+			position: "Software Engineer",
+			duration: "Jan 2022 - Jan 2023",
+			points: [
+				"Developed algorithms for analyzing financial markets and executing trading strategies.",
+				"Utilized Python, MQL5, and Pinescript for back-testing and optimizing trading strategies.",
+				"Created automated systems for executing and monitoring trades.",
+			],
+		},
+		{
+			company: "BuzzKarma",
+			position: "Full Stack Developer With Mobile",
+			duration: "March 2022 - Dec 2023",
+			points: [
+				"Developed a Flutter-based Android application for online earnings.",
+				"Worked on the user management system and admin panel using React.",
+				"Built a robust back-end with Node.js, Express, MongoDB, and Redis.",
+				"Achieved high user satisfaction through consistent troubleshooting and optimization.",
+			],
 		},
 	],
 };
@@ -84,10 +111,10 @@ const education = {
 	icon: "/assets/resume/badge.svg",
 	title: "My Education",
 	description:
-		"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi distinctio alias temporibus culpa animi, ullam.",
+		"Driven by a passion for technology and innovation, I pursued a BSc. in Software Engineering at Al-Hikmah University, followed by ongoing specialization in AI and Machine Learning at Aptech.",
 	items: [
 		{
-			institution: "Al-Hikmah University Ilroin",
+			institution: "Al-Hikmah University Ilorin",
 			degree: "Bsc. Software Engineering",
 			duration: "2019 - 2023",
 		},
@@ -103,7 +130,7 @@ const skills = {
 	icon: "/assets/resume/badge.svg",
 	title: "My Skills",
 	description:
-		"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi distinctio alias temporibus culpa animi, ullam.",
+		"I have developed a versatile skill set in web development, ranging from front-end technologies to full-stack frameworks, complemented by design proficiency.",
 	skillslist: [
 		{
 			icon: <FaHtml5 />,
@@ -161,13 +188,13 @@ const Resume = () => {
 						{/* experience */}
 						<TabsContent value='experience' className='w-full'>
 							<div className='flex flex-col  gap-[30px] text-center xl:text-left'>
-								<h3 className='text-4xl font-bold'>{experince.title}</h3>
+								<h3 className='text-4xl font-bold'>{experience.title}</h3>
 								<p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>
-									{experince.description}
+									{experience.description}
 								</p>
 								<ScrollArea className='h-[400px]'>
 									<ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
-										{experince.items.map((item, index) => {
+										{experience.items.map((item, index) => {
 											return (
 												<li
 													key={index}
@@ -179,7 +206,7 @@ const Resume = () => {
 													<div className='flex items-center gap-3'>
 														{/* dot */}
 														<span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
-														<p className='text-white/60'>{item.comapny}</p>
+														<p className='text-white/60'>{item.company}</p>
 													</div>
 												</li>
 											);
@@ -191,7 +218,7 @@ const Resume = () => {
 						{/* education */}
 						<TabsContent value='education' className='w-full'>
 							<div className='flex flex-col  gap-[30px] text-center xl:text-left'>
-								<h3 className='text-4xl font-bold'>{experince.title}</h3>
+								<h3 className='text-4xl font-bold'>{experience.title}</h3>
 								<p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>
 									{education.description}
 								</p>
